@@ -29,7 +29,7 @@ private:
 
     int findLargestInteger(int num, MinHeap& minHeapOddValues, MinHeap& minHeapEvenValues) const {
 
-        // 'placeOfDigit' is within INT_MAX but it is declared as 'long' to keep the code simple.
+        // All used values of 'placeOfDigit' are within INT_MAX but it is declared as 'long' to keep the code simple.
         // With some values, after the last interation, 'placeOfDigit' may exceed INT_MAX.
         // Some compilers, such as clang 11, might throw a Runtime Error in this case.
         // The value that exceeds INT_MAX is not used, since it is the last iteration
